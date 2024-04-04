@@ -1,0 +1,192 @@
+@font-face{
+    font-family: myfont;
+    src:url(panton.ttf);
+}
+
+@font-face{
+    font-family: head;
+    src:url(Vogue.ttf);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ddaa81; /* Updated background color */
+    margin: 0;
+    padding: 0;
+    position: relative; /* Added for positioning the wave */
+}
+
+.wave-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px; /* Adjust the height as needed */
+    z-index: -1; /* Push the wave behind other content */
+}
+.wavefront {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px; /* Adjust the height as needed */
+    z-index: -2; /* Push the wave behind other content */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: head;
+}
+
+h2 {
+    font-family: myfont;
+    font-size: 12px;
+}
+p {
+    font-family: myfont;
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #000000;
+    margin-bottom: 5px;
+    font-family: myfont;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+textarea {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.button-50 {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-50:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-50:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+#outputContainer {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#outputText {
+    font-size: 40px;
+    color: #333;
+    white-space: pre-wrap;
+}
+
+
+/* Responsive styles */
+/* Responsive styles */
+@media (min-width: 576px) {
+    .container {
+        padding: 30px;
+    }
+    .wave-container {
+        height: 120px;
+    }
+    .wavefront {
+        height: 120px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 80%;
+    }
+    .wave-container {
+        height: 100px;
+    }
+    .wavefront {
+        height: 100px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 70%;
+    }
+    .wave-container {
+        height: 80px;
+    }
+    .wavefront {
+        height: 80px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 60%;
+    }
+    .wave-container {
+        height: 60px;
+    }
+    .wavefront {
+        height: 60px;
+    }
+}
